@@ -25,7 +25,7 @@ This portfolio was built using **React** and **Vite**, with a clean and responsi
 - ESLint
 - PostCSS
 
-## Getting Started
+## 📦 Getting Started
 
 1. Run `npm install`
 2. Run `npm run dev`
