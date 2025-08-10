@@ -38,10 +38,10 @@ export function Layout({
             <div>
               <h1 className="text-xl sm:text-2xl font-semibold tracking-tight">
                 <button onClick={() => setCurrentPage('home')} className="hover:text-gray-600 transition-colors">
-                  Your Name, PhD
+                  Niruthikka Sritharan, PhD Student
                 </button>
               </h1>
-              <p className="text-sm text-gray-500">Academic Researcher</p>
+              <p className="text-sm text-gray-500">Academic Researcher | Computer Science & AI Enthusiast</p>
             </div>
             {/* Desktop Navigation */}
             <nav className="hidden md:block">
@@ -84,12 +84,12 @@ export function Layout({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Niruthikka Sritharan. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-sm text-gray-500">
-                <a href="mailto:your.email@university.edu" className="hover:text-gray-600 transition-colors">
-                  your.email@university.edu
+                <a href="mailto:SR0001KA@e.ntu.edu.sg" className="hover:text-gray-600 transition-colors">
+                  SR0001KA@e.ntu.edu.sg
                 </a>
               </p>
             </div>
