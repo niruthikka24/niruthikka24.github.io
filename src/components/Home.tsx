@@ -1,14 +1,82 @@
 import React from 'react';
+import { Mail, Linkedin, Download, ExternalLink, GraduationCap } from 'lucide-react';
+
 export function Home() {
   return <div className="max-w-3xl mx-auto">
-      <div className="mb-12 text-center">
-        <h1 className="text-3xl sm:text-4xl font-semibold mb-4">
-          Exploring Human-Centered AI
-        </h1>
-        <p className="text-xl text-gray-600">
-          PhD Researcher at Nanyang Technological University (NTU), Singapore
-        </p>
+      {/* Header Section with Photo and Contact */}
+      <div className="mb-12">
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+          {/* Profile Photo */}
+          <div className="flex-shrink-0">
+            <img 
+              src="/images/me.JPG" 
+              alt="Profile photo"
+              className="w-48 h-48 rounded-full object-cover border-4 border-gray-100 shadow-lg"
+            />
+          </div>
+          
+          {/* Name, Title, and Contact Info */}
+          <div className="text-center md:text-left">
+            <h1 className="text-2xl sm:text-3xl font-semibold mb-2">
+              Exploring Human-Centered AI
+            </h1>
+            <p className="text-xl text-gray-600 mb-6">
+              PhD Researcher at Nanyang Technological University (NTU), Singapore
+            </p>
+            
+            {/* Contact Information */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 justify-center md:justify-start">
+              <a 
+                href="mailto:SR0001KA@e.ntu.edu.sg" 
+                className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <Mail size={18} />
+                <span className="text-sm">Email</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/niruthikka-sritharan/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <Linkedin size={18} />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <a 
+                href="https://scholar.google.com/citations?user=JvNceVgAAAAJ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <GraduationCap size={18} />
+                <span className="text-sm">Google Scholar</span>
+              </a>
+              <a 
+                href="https://orcid.org/0009-0007-3322-3218" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947 0 .525-.422.947-.947.947-.525 0-.946-.422-.946-.947 0-.516.421-.947.946-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.588-1.303 3.588-3.722 0-2.359-1.303-3.722-3.644-3.722h-2.241z"/>
+                </svg>
+                <span className="text-sm">ORCID</span>
+              </a>
+            </div>
+            
+            {/* CV View Button */}
+            <button 
+              onClick={() => window.open('/resume.pdf', '_blank')}
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              <ExternalLink size={18} />
+              View CV
+            </button>
+          </div>
+        </div>
       </div>
+
+      {/* Main Content */}
       <div className="prose prose-lg mx-auto">
         <p>
           Welcome to my academic portfolio. I am a PhD student at the{" "} 
