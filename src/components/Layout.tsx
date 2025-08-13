@@ -20,16 +20,20 @@ export function Layout({
   }, {
     id: 'publications',
     label: 'Publications'
-  }, {
-    id: 'projects',
-    label: 'Projects'
-  }, {
+  }, 
+  // {
+  //   id: 'projects',
+  //   label: 'Projects'
+  // }, 
+  {
     id: 'honors',
     label: 'Honors & Awards'
-  }, {
-    id: 'about',
-    label: 'About'
-  }];
+  }, 
+  // {
+  //   id: 'about',
+  //   label: 'About'
+  // }
+];
   return <div className="min-h-screen bg-white font-serif">
       {/* Header */}
       <header className="border-b border-gray-200">
