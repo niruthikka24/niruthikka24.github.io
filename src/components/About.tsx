@@ -8,23 +8,20 @@ export function About() {
         </div>
         <div className="md:w-2/3 prose prose-lg">
           <p>
-            I am a [your position, e.g., "PhD candidate", "Postdoctoral
-            Researcher"] at [your institution] specializing in [your field]. My
-            research focuses on [brief description of research focus].
+            I am a PhD candidate at College of Computing and Data Science, Nanyang Technological University, Singapore. My current research explores the intersection of AI and data visualization, developing intelligent interfaces that enhance human-computer interaction through explainable, insight-driven tools for complex data environments.
           </p>
           <p>
-            I received my [previous degree(s)] from [previous institution(s)].
-            Before joining [current institution], I [brief description of
-            relevant previous experience].
+            I received my bachelor's degree from the Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.
+            Before joining NTU, I worked as an AI-ML software engineer at Cut+Dry, a USA-based food service e-commerce platform.
           </p>
-          <p>
+          {/* <p>
             My work has been published in [notable journals or conferences] and
             has been recognized with [any awards, grants, or recognitions].
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="space-y-8">
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-medium mb-4 border-b border-gray-200 pb-2">
             Research Interests
           </h2>
@@ -34,7 +31,7 @@ export function About() {
             <li>Research interest 3 with brief explanation</li>
             <li>Research interest 4 with brief explanation</li>
           </ul>
-        </div>
+        </div> */}
         <div>
           <h2 className="text-2xl font-medium mb-4 border-b border-gray-200 pb-2">
             Education
