@@ -5,7 +5,10 @@ export function Research() {
     description: 'The primary focus is on developing interpretable AI systems for medical image analysis, specifically targeting cervical cancer detection through advanced image segmentation techniques. This work addresses the critical need for transparency in AI-driven medical diagnostics by creating explainable models that can provide clear reasoning for their classification decisions. The research integrates explainable AI (XAI) methods with computer vision techniques to enable precise segmentation of cellular structures, contributing to more reliable and trustworthy automated medical diagnosis systems.',
     topics: [
       <>
-        Conducted research in collaboration with the{" "}
+        Conducted research under the supervision of{" "}
+        <a href="https://scholar.google.com/citations?user=DEUAL1UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+          Prof. Dulani Meedeniya
+        </a>, in collaboration with the{" "}
         <a href="https://sites.google.com/cse.mrt.ac.lk/biohealth/home/imaging/cervical-cancer-screening-using-explainability" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
           BioHealth Informatics Group 
         </a>{" and "}
