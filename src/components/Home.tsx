@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Download, ExternalLink, GraduationCap } from 'lucide-react';
+import { Mail, Linkedin, ExternalLink, GraduationCap, FileText } from 'lucide-react';
 
 export function Home() {
   return <div className="max-w-3xl mx-auto">
@@ -25,7 +25,7 @@ export function Home() {
             </p>
             
             {/* Contact Information */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 justify-center md:justify-start">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 justify-center md:justify-start">
               <a 
                 href="mailto:SR0001KA@e.ntu.edu.sg" 
                 className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
@@ -62,16 +62,25 @@ export function Home() {
                 </svg>
                 <span className="text-sm">ORCID</span>
               </a>
+              <a 
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <FileText size={18} />
+                <span className="text-sm">Résumé</span>
+              </a>
             </div>
             
             {/* CV View Button */}
-            <button 
+            {/* <button 
               onClick={() => window.open('/resume.pdf', '_blank')}
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               <ExternalLink size={18} />
               View CV
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
