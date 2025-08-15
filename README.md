@@ -29,3 +29,10 @@ This portfolio was built using **React** and **Vite**, with a clean and responsi
 
 1. Run `npm install`
 2. Run `npm run dev`
+
+## 🌐 For Deployment After Changes
+
+1. Run `git push origin --delete gh-pages`
+2. Run `git branch -D gh-pages`
+3. Run `npm run build`
+4. Run `npm run deploy`
